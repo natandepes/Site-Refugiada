@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+    <header id="header">
+        <a id="logo" href="">Woman For Woman</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <div class="hl">
+            <ul class="a" id="menu" role="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Procurar casa</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#"> <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label></a></li>
+              </ul>
+          </div>
+        </nav>
+      </header>
+
+        <div class="div-slides">
+            <div>
+                <h1>Casa Nº 44 - São Paulo</h1>
+                <h2>(Fotos da casa em slideshow)</h2>
+            </div>
+            <hr class="solid">
+            <div id="slider">
+                    <figure>
+                        <img src="imgs/foto1.jpg" width="100%" height="100%">
+                        <img src="imgs/foto2.jpg" width="100%" height="100%">
+                        <img src="imgs/foto3.jpg" width="100%" height="100%">
+                        <img src="imgs/foto4.jpg" width="100%" height="100%">
+                        <img src="imgs/foto5.jpg" width="100%" height="100%">
+                    </figure>
+                  </div>
+               </div>
+        </div>
+        
+        
+          <div class="div-grids">
+              <div class="grid-container">
+               <div class="grid-foto">
+                    <div class="grid-item">
+                      <img id="fotopessoa" src="imgs/vera.jpg" alt="Foto da anfitriã (Vera)" width="100%" height="100%">
+                    </div>
+                    <div class="grid-item">
+                      <h3>Anfitriã: Vera Damasceno</h3>
+                      <h4>Ocupação disponível: 1 Quarto - Banheiro - 2 camas de solteiro</h4>
+                      <h4>Observações: Aceita cachorros e não é permitido fumar</h4>
+                      <h4>Vagas: 2 pessoas da mesma família</h4>
+                    </div>
+              </div>
+            </div>
+              <div class="grid-container">
+               <div class="grid-item">
+                      <h3>Informações da casa</h3>
+                <div>
+                    <ul>
+                        <li>
+                            Apartamento de 55m², perto de, padaria, farmácia, escola e creches, 10 minutos do centro.
+                        </li>
+                        <li>
+                            Condomínio fechado com quadra, piscina, churrasqueira, área de lazer, portaria 24h.
+                        </li>
+                        <li>
+                            Somente a anfritriã mora nesta casa, ela não tem parceiro. Não é muito grande, mas bem flexível bem localizada e aconchegante.
+                        </li>
+                    </ul>
+                </div>
+               </div>
+              </div>
+
+              <div class="grid-container">
+                    <div class="grid-item">
+                       <h3>Sobre a anfitriã</h3>
+                        <div>
+                            <p>Olá, eu me chamo Vera, muito prazer. Assim como o resto do mundo, eu tenho visto e acompanhado essa situação que vem acontecendo na Ucrânia, mas diferente de muitos, eu realmente queria fazer algo para ajudar, então quando vi essa oportunidade, eu nem pensei duas vezes. Será mais do que um prazer te receber e eu farei de tudo para que você tenha uma experiência de conforto e se sinta próxima do que um dia foi o seu lar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h5>Revisões</h5>                     
+                        <h3>
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                            Yelena Melnik
+                        </h3>
+                        <div>
+                            <p>Muito boa a experiência, casa muito confortável e excelente anfitriã, a Vera me apoiou demais e me mostrou que ainda é possível seguir em frente. Me tranquiliza saber que pessoas que passaram por coisas que nem eu têm um espaço no mundo. Obrigado Vera.</p>
+                        </div>
+                        <h3>
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                            Anastasia Kovalchuk
+                        </h3>
+                        <div>
+                            <p>Você deve ser um anjo Vera, queria ter ficado mais tempo, mas sei que você precisa ajudar outras pessoas. Não imagino lugar melhor que eu poderia ter escolhido. Casa excelente, melhor ainda só o coração da anfitriã. Gratidão eterna.</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+
+            <div class="travel">
+                <p id="leg">Escolha um dia para que você possa solicitar a reserva:</p>
+                <input type="date" id="date-picker">
+            </div> 
+
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>Reserva solicitada com sucesso!</h1>
+                    <img src="imgs/yes.png" width="50px" alt="Ícone de aprovação">
+                </div>
+            </div>
+
+            <div class="btn">
+                <button class="reserva" id="res" onclick="togglePopup()"><h6>Reservar</h6></button>
+            </div> 
+
+            <footer class="footer">
+                <div class="l-footer">
+                <h1>
+                <img id="png2" src="imgs/logo.png" alt="Logo da ONG"></h1>
+                <p>
+                Nós somos uma organização recém formada e sem interesse financeiro, apenas queremos ajudar as refugiadas na atual situação do mundo.</p>
+                </div>
+                <ul class="r-footer">
+                <li>
+                  <h2>
+                Social</h2>
+                <ul class="box">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Orkut</a></li>
+                </ul>
+                </li>
+                <li>
+                  <h2>
+                Informações</h2>
+                <ul class="box">
+                <li><a href="#">Tenho uma boa oportunidade de vida no Brasil?</a></li>
+                <li><a href="#">Quando posso partir?</a></li>
+                <li><a href="#">Quais meus direitos?</a></li>
+                <li><a href="#">Segurança</a></li>
+                </ul>
+                </li>
+                <li>
+                  <h2>
+                Legislativo</h2>
+                <ul class="box">
+                <li><a href="#">Políticas de privacidade</a></li>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Contrato</a></li>
+                </ul>
+                </li>
+                </ul>
+                <div class="b-footer">
+                <p>
+                Todos os direitos reservados ©Woman For Woman 2022 </p>
+                </div>
+                </footer>
+
+ <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
