@@ -14,7 +14,7 @@
 > document.getElementById("popup-1").classList.toggle("active");
 >    
 >}
- - O funcionamento do botão foi feito 95% em ***CSS***, eu somente precisei de um comando em JavaScript puxando o botao pelo Id "popup-1", para quando ele fosse clicado ele acionasse minhas divs que estavam antes em "display: none", para tornalas "active".
+ - O funcionamento do botão foi feito 95% em ***CSS***, eu somente precisei de um comando em JavaScript puxando o botão pelo Id "popup-1", para quando ele fosse clicado ele acionasse minhas divs que estavam antes em "display: none", para tornalas "active" (ativas).
 
 ### ***Modo claro e modo escuro***
 >const chk = document.getElementById('chk')
@@ -22,7 +22,7 @@
 >chk.addEventListener('change', () => {
 >  document.body.classList.toggle('dark')
 >})
- - Esse foi bem simples tanto no ***CSS*** tanto no ***JavaScript***, pena que só consegui aplicar no ***body***, queria ter mudado a tela dos textos também e da header e do footer, mas acabou dando tudo errado então deixei por assim mesmo. Eu coloquei um input, com algumas configurações visuais, com o Id "chk", e quando acionado ele aciona um evento, onde a cor do body vira uma classe dark, deixando o body escuro, e apertando denovo desaciona essa classe.
+ - Esse foi bem simples tanto no ***CSS*** tanto no ***JavaScript***, pena que só consegui aplicar no ***body***, queria ter mudado a cor dos textos, também da header e do footer, mas acabou dando tudo errado então deixei por assim mesmo. Eu coloquei um input, com algumas configurações visuais, com o Id "chk", e quando acionado ele aciona um evento, onde o body é atribuído a uma classe dark, que deixa sua cor escura, e apertando denovo desaciona essa classe.
 
 ### ***Condição para que o botão fosse ativado***
 >var btReservar = document.getElementById("res")
@@ -45,7 +45,7 @@
 >
 >  btReservar.disabled = false
 >}
- - Fiz exatamente como professor ensinou em sala de aula, mas em vez de usar a função "onclick" usei a "oninput. Atribui o Id do input e do botão a variáveis (sim está repetido, eu estou atribuindo o mesmo valor duas vezes, pois por algum motivo essa função estava tendo vários bugs e não funcionando, então quando funcionou eu não mexi mais) e fiz com que o botão se tornasse desativado dentro dessa função "enable" que eu criei, porém após ser inserido algum dado no input, era chamada uma função "free" e o botão era ativado.
+ - Fiz na mesma lógica que professor ensinou em sala de aula, mas em vez de usar a função "onclick" usei a "oninput". Atribui o Id do input e do botão a variáveis (sim duas vezes, valores repetidos, pois por algum motivo essa função estava tendo vários bugs e não funcionando, imaginei que fosse conflito com outra, não sei, então quando funcionou eu não mexi mais) chamei essa função e fiz com que o botão se tornasse desativado dentro dela, porém após ser inserido algum dado no input, era chamada uma função "free" e o botão era ativado.
 
 ### ***Responsividade do Header***
 >const btnMobile = document.getElementById('btn-mobile');
@@ -72,4 +72,4 @@
 >
 >btnMobile.addEventListener('click', toggleMenu);
 >btnMobile.addEventListener('touchstart', toggleMenu);
- - Esse foi disparado o que eu mais tive dificuldade para fazer, pesquisei bastante, e grande parte da responsividade do header está no ***CSS***, bem mais compreensível por sinal. Mas a grosso modo, eu cirei uma constante que pegou o valor de um botão que só aparece quando a tela tem um width menor que 600px, então criei uma função com uma condicional onde se o tipo do evento for 'touchstart' executa essa função "event.preventDefault()", e também criei uma constante que puxava o valor da "nav" do header pelo Id, tornava-a 'active' (comportamento análogo ao exeomplo do popup), depois fiz uma condicional para que se o 'active' fosse true era feito um atributo para fechar o menu, se fosse falso, era feito um para abrir.
+ - Esse foi com certeza o que eu mais tive dificuldade para fazer, foram longos vídeos, e grande parte da responsividade do header está no ***CSS***, bem mais compreensível por sinal. Mas a grosso modo, eu cirei uma constante que pegou o valor de um botão que só aparece quando a tela quando ela tem um width menor que 600px, então criei uma função com uma condicional onde se o tipo do evento for 'touchstart' executa essa função "event.preventDefault()", e também criei uma constante que puxava o valor da "nav" do header pelo Id, tornava-a 'active' (comportamento análogo ao exeomplo do popup), depois fiz uma condicional para que se o 'active' fosse true era feito um atributo para fechar o menu, se fosse falso, era feito um para abrir. E finalemnte, ao fim do código, fiz com que essa função fosse chamada através de clicks ou touch.
